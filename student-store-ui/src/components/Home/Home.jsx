@@ -1,11 +1,11 @@
 import * as React from "react"
 import "./Home.css"
-
-//component 
+import Hero from "../Hero/Hero"
 
 export default function Home() {
   return (
     <div className="home">
+      {/*<Hero/> */}
 
       <div className="sub-navbar">
         <div className="content">
