@@ -15,6 +15,7 @@ export default function App() {
           <Navbar/>
           <Hero/>
           <Sidebar/>
+          
           <Home />
         </main>
       </BrowserRouter>

@@ -159,17 +159,19 @@
 .footer .content .top .links{
   display: flex;
   width: 100%;
+  justify-content: space-around;
 
 }
 .footer .content .top .links .links-col{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  align-items: center;
   
 }
 .footer .content .top .links .links-col ul li{
   color: #5b5b5b;
   list-style-type: none;
+  align-items: center;
 }
 
 .footer .content .bottom{

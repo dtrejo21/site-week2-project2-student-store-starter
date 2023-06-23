@@ -41,8 +41,6 @@ export default function Home() {
         </div>
       </div>
 
-
-
       <div className="about">
         <div className="content">
           <h3>About</h3>
@@ -67,9 +65,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
-
-      
+      </div>   
 
       <div className="contact">
         <div className="content">
