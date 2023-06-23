@@ -1,0 +1,13 @@
+.product-card{
+    display: flex;
+    flex-direction: column; 
+    border: 2px gray;
+}
+
+.product-card .media{
+    display: flex;
+}
+.product-card .media img{
+    height: 250px;
+    width: 250px;
+}

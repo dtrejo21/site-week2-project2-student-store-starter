@@ -1,0 +1,10 @@
+.product-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: baseline;
+}
+
+.product-grid .product-card{
+    background-color: white;
+}

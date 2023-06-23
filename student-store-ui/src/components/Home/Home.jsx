@@ -1,8 +1,30 @@
 import * as React from "react"
 import "./Home.css"
 import Hero from "../Hero/Hero"
+import axios from "axios";
+import { useState, useEffect } from "react";
+import ProductGrid from "../ProductGrid/ProductGrid";
 
-export default function Home() {
+export default function Home(props) {
+  const [selectedCategory, setSelectedCategory] = useState("All Categories");//like from lab
+  const [searchInput, setSearchInput] = useState(""); //determine what user will see
+  const [products, setProducts] = useState([]); //Cause its an array!
+
+  useEffect(() => {
+    const fetchProducts = async() =>{
+      try{//basically from what we learned last week
+        const url = "https://codepath-store-api.herokuapp.com/store"
+        const response = await axios.get(url);
+        const data = response.data;
+        setProducts(data.products); //
+      }
+      catch(error){
+        console.log("error");
+      }
+    }
+    fetchProducts(); //we have to call the function for it to work
+  }, []); //FIGURE OUT SEARCH
+
   return (
     <div className="home">
       {/*<Hero/> */}
@@ -42,6 +64,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <ProductGrid products={products} />
 
       <div className="about">
         <div className="content">
