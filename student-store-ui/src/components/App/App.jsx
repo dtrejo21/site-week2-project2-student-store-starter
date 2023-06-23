@@ -4,19 +4,25 @@ import Navbar from "../Navbar/Navbar"
 import Sidebar from "../Sidebar/Sidebar"
 import Home from "../Home/Home"
 import "./App.css"
-import Hero from "../Hero/Hero"
+
+import Footer from "../Footer/Footer"
+import ProductGrid from "../ProductGrid/ProductGrid"
+import ProductCard from "../ProductCard/ProductCard"
+import SubNavBar from "../SubNavBar/SubNavBar"
+
 
 export default function App() {
+
   return (
+
     <div className="app">
       <BrowserRouter>
         <main>
           {/* YOUR CODE HERE! */}
           <Navbar/>
-          <Hero/>
           <Sidebar/>
-          
-          <Home />
+          <Home/>
+          <Footer/>
         </main>
       </BrowserRouter>
     </div>

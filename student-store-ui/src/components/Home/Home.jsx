@@ -1,10 +1,10 @@
 import * as React from "react"
 import "./Home.css"; 
+import ProductGrid from "../ProductGrid/ProductGrid";
+import Hero from "../Hero/Hero"
 import axios from "axios";
 import { useState, useEffect } from "react";
-import ProductGrid from "../ProductGrid/ProductGrid";
-import Footer from "../Footer/Footer";
-import SubNavBar from "../SubNavBar/SubNavBar";
+
 
 export default function Home(props) {
   const [selectedCategory, setSelectedCategory] = useState("All Categories");//like from lab
@@ -17,7 +17,7 @@ export default function Home(props) {
         const url = "https://codepath-store-api.herokuapp.com/store"
         const response = await axios.get(url);
         const data = response.data;
-        setProducts(data.products); //
+        setProducts(data.products); 
       }
       catch(error){
         console.log("error");
@@ -28,8 +28,9 @@ export default function Home(props) {
 
   return (
     <div className="home">
-      <SubNavBar/>
-      <ProductGrid products={products} />
+
+      <Hero/>
+      <ProductGrid products = {products}/>
 
       <div className="about">
         <div className="content">
@@ -85,8 +86,6 @@ export default function Home(props) {
 
         </div>
       </div>
-      <Footer/>
-      
     </div>
   );
 }

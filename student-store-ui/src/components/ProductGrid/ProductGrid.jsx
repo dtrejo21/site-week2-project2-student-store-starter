@@ -2,7 +2,6 @@ import * as React from "react"
 import "./ProductGrid.css"
 import ProductCard from "../ProductCard/ProductCard";
 
-
 export default function ProductGrid({products}){
     return(/*Accepts the following props: products*/
     <>
@@ -12,9 +11,9 @@ export default function ProductGrid({products}){
                 <ProductCard 
                     key={product.id}
                     product={product}
-                    showDescription={false}/>
-                )
-            )}
+                    showDescription={false}
+                />
+                ))}
         </div>
     </>
     );
