@@ -1,14 +1,14 @@
 import * as React from "react"
-import "./Home.css"
-import Hero from "../Hero/Hero"
+import "./Home.css"; 
 import axios from "axios";
 import { useState, useEffect } from "react";
 import ProductGrid from "../ProductGrid/ProductGrid";
 import Footer from "../Footer/Footer";
+import SubNavBar from "../SubNavBar/SubNavBar";
 
 export default function Home(props) {
   const [selectedCategory, setSelectedCategory] = useState("All Categories");//like from lab
-  const [searchInput, setSearchInput] = useState(""); //determine what user will see
+  const [searchInput, setSearchInput] = useState(""); //determine what user will see, keeps updating
   const [products, setProducts] = useState([]); //Cause its an array!
 
   useEffect(() => {
@@ -23,49 +23,12 @@ export default function Home(props) {
         console.log("error");
       }
     }
-    fetchProducts(); //we have to call the function for it to work
-  }, []); //FIGURE OUT SEARCH
+    fetchProducts();
+  }, []); 
 
   return (
     <div className="home">
-      {/*<Hero/> */}
-
-      <div className="sub-navbar">
-        <div className="content">
-          <div className="row">
-            <div className="searchbar">
-              <input type="text" placeholder="Search"/>
-              <button>Search</button>
-            </div>
-            <div cflassName="links">
-              <span className="help"></span>
-              <div className="cart"></div>
-            </div>
-          </div>
-
-          <div className="row">
-            <div className="hamburger-icon"></div>
-            <ul className="categories-menu">
-              <li className="is-active">
-                <button>All Categories</button>
-              </li>
-              <li>
-                <button>Clothing</button>
-              </li>
-              <li>
-                <button>Food</button>
-              </li>
-              <li>
-                <button>Accessories</button>
-              </li>
-              <li>
-                <button>Tech</button>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
+      <SubNavBar/>
       <ProductGrid products={products} />
 
       <div className="about">
