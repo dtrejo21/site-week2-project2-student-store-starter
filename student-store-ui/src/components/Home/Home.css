@@ -78,6 +78,12 @@
   border: solid 1px #e0e0e0;
   height: 330px;
 }
+.about .content .summary .logo{
+  background-color: #2C4047;
+  height: 329px;
+  align-items: center;
+
+}
 .about .content .summary .text{
   align-items: flex-start;
   padding: 28px 36px;

@@ -1,11 +1,15 @@
-import * as React from "react"
+//import * as React from "react"
 import "./Logo.css"
+import { Link } from "react-router-dom"
 
 export default function Logo(){
-    return(
+    return(/*Have to use link component from react-router-dom*/
         <div className="logo">
-            <img src="https://codepath-student-store-demo.surge.sh/assets/giant_codepath.6952ef57.svg" alt="codepath logo"></img>
+            <Link to="/">
+                <img src="https://codepath-student-store-demo.surge.sh/assets/codepath.f1b3e41a.svg" alt="codepath logo"></img>
+            </Link>
         </div>
+
     )
 
 }

@@ -14,7 +14,7 @@ export default function Home() {
               <input type="text" placeholder="Search"/>
               <button>Search</button>
             </div>
-            <div className="links">
+            <div cflassName="links">
               <span className="help"></span>
               <div className="cart"></div>
             </div>
@@ -62,8 +62,10 @@ export default function Home() {
                 college students around the country.
               </p>
             </div>
-            
-          </div>
+            <div className="logo">
+              <img src="https://codepath-student-store-demo.surge.sh/assets/giant_codepath.6952ef57.svg" alt="codepath logo"></img>
+            </div>
+            </div>
         </div>
       </div>   
 

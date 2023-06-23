@@ -1,31 +1,26 @@
 import * as React from "react"
 import "./Navbar.css"
+import { Link } from "react-router-dom"
+import Logo from "../Logo/Logo"
 
 export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="content">
-        <div className="logo">
-          <a href="/">
-            <img src="https://codepath-student-store-demo.surge.sh/assets/codepath.f1b3e41a.svg" alt="codepath logo"></img>
-          </a>
-        </div>
-        <div className="social">
-
-          
-        </div>
+        <Logo/>
+        <div className="social"> </div>
         <ul className="links">
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/#About">About Us</a>
+            <Link to="/#About">About Us</Link>
           </li>
           <li>
-            <a href="/#Contact">Contact Us</a>
+            <Link to="/#Contact">Contact Us</Link>
           </li>
           <li>
-            <a href="/#Buy">Buy Now</a>
+            <Link to="/#Buy">Buy Now</Link>
           </li>
         </ul>
       </div>
