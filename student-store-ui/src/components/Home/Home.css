@@ -86,7 +86,6 @@
 .about .content .summary .text{
   align-items: flex-start;
   padding: 28px 36px;
-  color: #5B5B5B;
   background-color: white;
 }
 
@@ -141,40 +140,3 @@
 .contact .content .summary .media img{
 }*/
 
-.footer{
-  width: 100%;
-  height: 350px;
-}
-
-.footer .content{
-  display: flex;
-  flex-direction: column;
-}
-
-.footer .content .top{
-  padding-top: 40px;
-  justify-content: space-between;
-  
-}
-.footer .content .top .links{
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-
-}
-.footer .content .top .links .links-col{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-}
-.footer .content .top .links .links-col ul li{
-  color: #5b5b5b;
-  list-style-type: none;
-  align-items: center;
-}
-
-.footer .content .bottom{
-  margin-left: auto;
-
-}

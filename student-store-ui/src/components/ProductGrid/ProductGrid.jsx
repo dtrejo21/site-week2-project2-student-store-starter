@@ -11,7 +11,8 @@ export default function ProductGrid({products}){
             {products.map((product) => (
                 <ProductCard 
                     key={product.id}
-                    product={product}/>
+                    product={product}
+                    showDescription={false}/>
                 )
             )}
         </div>
