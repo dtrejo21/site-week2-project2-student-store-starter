@@ -25,7 +25,7 @@ export default function ProductGrid({products, selectedCategory, searchInput}){
         <div className="product-grid">
             {filteredProducts.map((product) => (
                 <ProductCard 
-                    key={product.id}
+                    key={product.name}
                     product={product}
                     showDescription={false}
                 />
