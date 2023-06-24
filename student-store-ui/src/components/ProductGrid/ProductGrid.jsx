@@ -16,7 +16,7 @@ export default function ProductGrid({products, selectedCategory, searchInput}){
     if(searchInput)
     {
         filteredProducts = filteredProducts.filter((product) => {
-            return product.name.toLowerCase().include(searchInput.toLowerCase())})
+            return product.name.toLowerCase().includes(searchInput.toLowerCase())})
     }
     return(/*Accepts the following props: products*/
     <>

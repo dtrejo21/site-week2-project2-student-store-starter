@@ -38,7 +38,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex: 1;
 }
 
   .sub-navbar .content .row .filter button{

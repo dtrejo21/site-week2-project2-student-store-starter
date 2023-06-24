@@ -10,9 +10,9 @@ export default function SubNavBar({setSelectedCategory, searchInput, setSearchIn
                 <div className="row">
                     <div className="searchbar">
                         <input type="text" 
-                            placeholder="Search"
-                            value={searchInput}
-                            onChange={(e) => setSearchInput(e.target.value)}
+                               placeholder="Search"
+                               value={searchInput}
+                               onChange={ (event) => setSearchInput(event.target.value)}
                         />
                         <button>Search</button>
                     </div>
