@@ -21,7 +21,7 @@
   .sub-navbar .content .row .hamburger-icon{
   
   }*/
-  .sub-navbar .content .row .categories-menu{
+  .sub-navbar .content .row {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -30,13 +30,21 @@
     height: 40px;
     flex: 1;
   }
+  /*
   .sub-navbar .content .row .categories-menu li.is-active button{
     border-bottom: solid 2px #00c385; 
-  }
-  .sub-navbar .content .row .categories-menu li button{
+  }*/
+.sub-navbar .content .row .filter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 1;
+}
+
+  .sub-navbar .content .row .filter button{
     cursor: pointer;
-    background-color: transparent;
     border: none; 
+    background-color: transparent;
     font-size: 18px;
     font-weight: 500;
     padding-bottom: 10px;

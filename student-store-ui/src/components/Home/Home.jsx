@@ -4,10 +4,10 @@ import ProductGrid from "../ProductGrid/ProductGrid";
 import Hero from "../Hero/Hero"
 import axios from "axios";
 import { useState, useEffect } from "react";
-
+import SubNavBar from "../SubNavBar/SubNavBar";
 
 export default function Home(props) {
-  const [selectedCategory, setSelectedCategory] = useState("All Categories");//like from lab
+  const [selectedCategory, setSelectedCategory] = useState("all Categories");//like from lab
   const [searchInput, setSearchInput] = useState(""); //determine what user will see, keeps updating
   const [products, setProducts] = useState([]); //Cause its an array!
 
@@ -30,7 +30,9 @@ export default function Home(props) {
     <div className="home">
 
       <Hero/>
-      <ProductGrid products = {products}/>
+      
+      <SubNavBar setSelectedCategory={setSelectedCategory} searchInput={searchInput} setSearchInput={setSearchInput}/>
+      <ProductGrid products = {products} selectedCategory={selectedCategory} searchInput={searchInput}/>
 
       <div className="about">
         <div className="content">

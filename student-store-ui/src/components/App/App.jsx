@@ -4,12 +4,9 @@ import Navbar from "../Navbar/Navbar"
 import Sidebar from "../Sidebar/Sidebar"
 import Home from "../Home/Home"
 import "./App.css"
-
 import Footer from "../Footer/Footer"
-import ProductGrid from "../ProductGrid/ProductGrid"
-import ProductCard from "../ProductCard/ProductCard"
-import SubNavBar from "../SubNavBar/SubNavBar"
-
+//Renders Product Detail
+//Not found
 
 export default function App() {
 

@@ -1,41 +1,38 @@
+import * as React from "react"
 import "./SubNavBar.css"
 
-export default function SubNavBar(){
+const categories = ["All Categories", "Clothing", "Food", "Accessories", "Tech"]
+
+export default function SubNavBar({setSelectedCategory, searchInput, setSearchInput}){
     return(
         <div className="sub-navbar">
-        <div className="content">
-          <div className="row">
-            <div className="searchbar">
-              <input type="text" placeholder="Search"/>
-              <button>Search</button>
-            </div>
-            <div className="links">
-              <span className="help"></span>
-              <div className="cart"></div>
-            </div>
-          </div>
+            <div className="content">
+                <div className="row">
+                    <div className="searchbar">
+                        <input type="text" 
+                            placeholder="Search"
+                            value={searchInput}
+                            onChange={(e) => setSearchInput(e.target.value)}
+                        />
+                        <button>Search</button>
+                    </div>
 
-          <div className="row">
-            <div className="hamburger-icon"></div>
-            <ul className="categories-menu">
-              <li className="is-active">
-                <button>All Categories</button>
-              </li>
-              <li>
-                <button>Clothing</button>
-              </li>
-              <li>
-                <button>Food</button>
-              </li>
-              <li>
-                <button>Accessories</button>
-              </li>
-              <li>
-                <button>Tech</button>
-              </li>
-            </ul>
-          </div>
-        </div>
+                    <div className="filter">
+                        {
+                            categories.map((category) => {
+                                return <button key={category.toLowerCase()}  onClick={() => setSelectedCategory(category.toLowerCase())}>
+                                    {category}
+                                </button>
+                            })
+                        }
+                    </div>
+
+                    <div className="links">
+                        <span className="help"></span>
+                        <div className="cart"></div>
+                    </div>
+                </div>
+            </div>
       </div>
     )
 }
