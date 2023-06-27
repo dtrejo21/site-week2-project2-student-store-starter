@@ -6,4 +6,5 @@
     width: 60px;
     overflow-y: scroll;
     position: fixed;
+    padding-bottom: 2rem;
 }

@@ -6,11 +6,11 @@
     margin: 0 auto;
   }
   .sub-navbar .content .row{
-    display: flex;
-    flex-direction: row;
     margin: 20px 0;
     align-items: center;
     justify-content: space-between;
+    padding-left: 40px;
+    
   
   }
   .sub-navbar .content .row .searchbar{
@@ -21,23 +21,15 @@
   .sub-navbar .content .row .hamburger-icon{
   
   }*/
-  .sub-navbar .content .row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    list-style-type: none;
-    height: 40px;
-    flex: 1;
-  }
+
   /*
   .sub-navbar .content .row .categories-menu li.is-active button{
     border-bottom: solid 2px #00c385; 
   }*/
 .sub-navbar .content .row .filter{
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
+    padding: 25px;
 }
 
   .sub-navbar .content .row .filter button{
