@@ -1,47 +1,54 @@
-
 .sub-navbar .content{
-    display: flex;
-    flex-direction: column;
-    padding-top: 20px;
-    margin: 0 auto;
-  }
-  .sub-navbar .content .row{
-    margin: 20px 0;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 40px;
-    
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+.sub-navbar .content .row{
+  margin: 20px 0;
+  padding-left: 40px;
+  display: flex;
   
-  }
-  .sub-navbar .content .row .searchbar{
-    display: flex;
-  }
-  
-  /*
-  .sub-navbar .content .row .hamburger-icon{
-  
-  }*/
 
-  /*
-  .sub-navbar .content .row .categories-menu li.is-active button{
-    border-bottom: solid 2px #00c385; 
-  }*/
+}
 .sub-navbar .content .row .filter{
-    display: flex;
-    justify-content: space-around;
-    padding: 25px;
+  display: flex;
+  justify-content: space-around;
+  padding: 25px;
+  
 }
 
-  .sub-navbar .content .row .filter button{
-    cursor: pointer;
-    border: none; 
-    background-color: transparent;
-    font-size: 18px;
-    font-weight: 500;
-    padding-bottom: 10px;
-  }
-  
-  /*
-  .material-icons{
-    
-  }*/
+.sub-navbar .content .row .filter button{
+  cursor: pointer;
+  border: none; 
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.material-icons{
+  color: white;
+  background-color: plum;
+  border: plum;
+  height: 40px;
+}
+.sub-navbar .content .row .searchbar{
+  display: flex;
+  padding-left: 10px;
+}
+
+input{
+  border: 1px solid #e3e3e3;
+  height: 40px;
+  width: 120px;
+}
+
+.sub-navbar .content .row .cart{
+  margin-left: 60px;
+  display: flex;
+  background-color: plum;
+  align-items: center;
+  color: white;
+  width: 100px;
+  justify-content: center;
+}
