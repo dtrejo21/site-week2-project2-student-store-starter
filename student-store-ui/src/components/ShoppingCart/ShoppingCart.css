@@ -1,0 +1,17 @@
+.shopping-cart .side-icons{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.shopping-cart .material-icons{
+    padding-top: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: #2C4047;
+    border: none;
+    color: white;
+}
+.hidden{
+    display: none;
+}

@@ -9,6 +9,11 @@
     padding-bottom: 2rem;
     position: fixed;
 }
+
+.sidebar .toggle-button{
+    background-color: #2C4047;
+    border: none;
+}
 .sidebar .material-icons{
     padding-top: 20px;
     font-size: 40px;
@@ -17,9 +22,10 @@
     border: none;
     color: white;
 }
-.sidebar .side-icons{
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.open{
+    width: 500px;
+}
+
+.close{
+    width: 60px;
 }
