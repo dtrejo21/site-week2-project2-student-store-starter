@@ -14,9 +14,21 @@ export default function SubNavBar({setSelectedCategory, searchInput, setSearchIn
                                value={searchInput}
                                onChange={ (event) => setSearchInput(event.target.value)}
                         />
-                        <button>Search</button>
+
+                        <button i className="material-icons">search</button>    
                     </div>
 
+                    <div className="cart">
+                        <p>My Cart</p>
+                        <button i className="material-icons">shopping_cart</button>
+                    </div>  
+
+                    <div className="links">
+                        <span className="help"></span>
+                        <div className="cart"></div>
+                    </div>
+                </div>
+                <div className="row">
                     <div className="filter">
                         {
                             categories.map((category) => {
@@ -25,11 +37,6 @@ export default function SubNavBar({setSelectedCategory, searchInput, setSearchIn
                                 </button>
                             })
                         }
-                    </div>
-
-                    <div className="links">
-                        <span className="help"></span>
-                        <div className="cart"></div>
                     </div>
                 </div>
             </div>

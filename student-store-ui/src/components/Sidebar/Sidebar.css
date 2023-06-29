@@ -3,8 +3,29 @@
     flex-direction: column;
     height: 100vh;
     background-color: #2C4047;
+    color: white;
     width: 60px;
     overflow-y: scroll;
-    position: fixed;
     padding-bottom: 2rem;
+    position: fixed;
+}
+
+.sidebar .toggle-button{
+    background-color: #2C4047;
+    border: none;
+}
+.sidebar .material-icons{
+    padding-top: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: #2C4047;
+    border: none;
+    color: white;
+}
+.open{
+    width: 500px;
+}
+
+.close{
+    width: 60px;
 }
