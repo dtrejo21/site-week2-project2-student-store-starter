@@ -12,15 +12,15 @@ export default function SubNavBar({setSelectedCategory, searchInput, setSearchIn
                         <input type="text" 
                                placeholder="Search"
                                value={searchInput}
-                               onChange={ (event) => setSearchInput(event.target.value)}
+                               onChange={ (e) => setSearchInput(e.target.value)}
                         />
 
-                        <button i className="material-icons">search</button>    
+                        <button>< i className="material-icons">search</i> </button>    
                     </div>
 
                     <div className="cart">
                         <p>My Cart</p>
-                        <button i className="material-icons">shopping_cart</button>
+                        <button> <i className="material-icons">shopping_cart</i> </button>
                     </div>  
 
                     <div className="links">

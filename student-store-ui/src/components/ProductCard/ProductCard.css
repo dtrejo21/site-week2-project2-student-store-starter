@@ -11,3 +11,20 @@
     height: 250px;
     width: 250px;
 }
+.product-card .actions .buttons{
+    width: 80px;
+}
+
+.product-card .actions i{
+    display: flex;
+    color: plum;
+    background-color: white;
+    box-shadow: none;
+    
+}
+.product-card .actions button{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    color: plum;
+}
