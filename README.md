@@ -11,10 +11,6 @@ Check out our [deployed Student Store](https://codepath-student-store-demo.surge
 - Checkout and view the final receipt.
 
 ## *Week 2* Application Features
-<a href="https://www.loom.com/share/2a63672bae284e8e86b6daad8bdeeeae">
-    <p>Student Store - 23 June 2023 - Watch Video</p>
-    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/2a63672bae284e8e86b6daad8bdeeeae-with-play.gif">
-  </a>
 
 ### Core Features
 
@@ -44,7 +40,7 @@ Check out our [deployed Student Store](https://codepath-student-store-demo.surge
 
 ### Stretch Features
 
-- [ ] Create an endpoint for fetching all orders in the database and an endpoint for serving an individual order based on its ID.
+- [x] Create an endpoint for fetching all orders in the database and an endpoint for serving an individual order based on its ID.
 - [ ] Build a page in the UI that displays the list of all past orders. The user should be able to click on any individual order to take them to a more detailed page of the transaction.
 - [ ] Allow users to use an input to filter orders by the email of the person who placed the order.
 - [ ] Your choice! (Replace this bullet explaining what you implemented. Example: Users can create a wish list of products they are interested in but not yet ready to purchase.)
