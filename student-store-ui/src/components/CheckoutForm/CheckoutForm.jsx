@@ -7,6 +7,7 @@ export default function checkoutForm({isOpen, shoppingCart, checkoutForm, handle
     return(
         <div className={isOpen ? "checkout-form": "hidden"}>
             <div className="checkout-form-input">
+                <p>Name</p>
                 <input className="input-field"
                    type="text"
                    name="name"
@@ -14,6 +15,7 @@ export default function checkoutForm({isOpen, shoppingCart, checkoutForm, handle
                    value={checkoutForm.name}
                    onChange={(e) => handleOnCheckoutFormChange(e.target.name, e.target.value)}
                 />
+                <p>Email</p>
                 <input className="input-field"
                    type="email"
                    name="email"
@@ -32,18 +34,18 @@ export default function checkoutForm({isOpen, shoppingCart, checkoutForm, handle
                 Object.keys(newOrder).length > 0 &&
                 <div className="recipt"> 
                     <p className="recipt-name">Receipt</p>
-                    <p>Showing recipt for {newOrder.name} avilable at {newOrder.email}</p>
+                    <p>Showing recipt for {newOrder.name} avilable at {newOrder.email}:</p>
                     {Object.entries(newOrder.shoppingCart).map(([productName, productInfo]) => {
                         const price = productInfo.price.toFixed(2);
                         const quantity = productInfo.quantity;
                         const total = (price * quantity).toFixed(2);
                         subtotal += parseFloat(total);
                         return(
-                            <p key={productName}> {quantity} total {productName} purchased at a cost of ${price} for a total cost of ${total}.</p>
+                            <li key={productName}> {quantity} total {productName} purchased at a cost of ${price} for a total cost of ${total}.</li>
                         )
                     })}
-                    <p>Before taxes, the subtotal was ${subtotal.toFixed(2)}.</p>
-                    <p>After taxes and fees were applied, the total comes out to ${(subtotal + (subtotal * 0.09)).toFixed(2)}.</p>
+                    <li>Before taxes, the subtotal was ${subtotal.toFixed(2)}.</li>
+                    <li>After taxes and fees were applied, the total comes out to ${(subtotal + (subtotal * 0.09)).toFixed(2)}.</li>
                 
                 </div>
             }
