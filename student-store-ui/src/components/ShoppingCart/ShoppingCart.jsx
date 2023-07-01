@@ -8,7 +8,7 @@ export default function ShoppingCart({isOpen, shoppingCart}){
     return(
         <div className={isOpen ? "shopping-cart": "shopping-cart hidden"}>
             <h3>Shopping Cart</h3>
-            <p className={isEmpty ? "": "hidden"}>No itmes added to cart yet. Start shopping now!</p>
+            <p className={isEmpty ? "": "hidden"}>No items added to cart yet. Start shopping now!</p>
             <div className={isEmpty ? "hidden": "table-sections"}>
                 <p>Name</p>
                 <p>Quantity</p>
@@ -34,8 +34,8 @@ export default function ShoppingCart({isOpen, shoppingCart}){
             }
             <div className={isEmpty ? "hidden": "receipt"}>
                 <p>Subtotal: ${subtotal.toFixed(2)}</p>
-                <p>Taxes and Fees: ${(subtotal * 0.09).toFixed(2)} </p>
-                <p>Total: ${(subtotal + (subtotal * 0.09)).toFixed(2)}</p>
+                <p>Taxes and Fees: ${(subtotal * 0.0875).toFixed(2)} </p>
+                <p>Total: ${(subtotal + (subtotal * 0.0875)).toFixed(2)}</p>
             </div>
 
             {/*

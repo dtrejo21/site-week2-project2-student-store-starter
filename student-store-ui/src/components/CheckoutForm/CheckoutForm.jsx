@@ -45,7 +45,7 @@ export default function checkoutForm({isOpen, shoppingCart, checkoutForm, handle
                         )
                     })}
                     <li>Before taxes, the subtotal was ${subtotal.toFixed(2)}.</li>
-                    <li>After taxes and fees were applied, the total comes out to ${(subtotal + (subtotal * 0.09)).toFixed(2)}.</li>
+                    <li>After taxes and fees were applied, the total comes out to ${(subtotal + (subtotal * 0.0875)).toFixed(2)}.</li>
                 
                 </div>
             }
