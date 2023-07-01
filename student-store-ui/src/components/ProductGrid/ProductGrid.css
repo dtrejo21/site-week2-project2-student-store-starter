@@ -7,4 +7,6 @@
 
 .product-grid .product-card{
     background-color: white;
+    display: flex;
+
 }

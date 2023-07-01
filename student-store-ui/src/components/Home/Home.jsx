@@ -3,36 +3,36 @@ import "./Home.css";
 import ProductGrid from "../ProductGrid/ProductGrid";
 import Hero from "../Hero/Hero"
 import axios from "axios";
-import { useState, useEffect } from "react";
+import { useState, useEffect} from "react";
 import SubNavBar from "../SubNavBar/SubNavBar";
 
-export default function Home(props) {
+export default function Home({handleAddItemToCart, handleRemoveItemFromCart, shoppingCart}) {
+  const [products, setProducts] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("all Categories");//like from lab
   const [searchInput, setSearchInput] = useState(""); //determine what user will see, keeps updating
-  const [products, setProducts] = useState([]); //Cause its an array!
 
   useEffect(() => {
-    const fetchProducts = async() =>{
-      try{//basically from what we learned last week
-        const url = "https://codepath-store-api.herokuapp.com/store"
+    const fetchProducts = async () => {
+      try{
+        const url = "https://codepath-store-api.herokuapp.com/store";
         const response = await axios.get(url);
         const data = response.data;
-        setProducts(data.products); 
-      }
-      catch(error){
-        console.log("error");
+        setProducts(data.products)
+      }catch(error){
       }
     }
     fetchProducts();
-  }, []); 
+  }, []);
 
   return (
     <div className="home">
-
       <Hero/>
       
       <SubNavBar setSelectedCategory={setSelectedCategory} searchInput={searchInput} setSearchInput={setSearchInput}/>
-      <ProductGrid products = {products} selectedCategory={selectedCategory} searchInput={searchInput}/>
+      <ProductGrid products = {products} selectedCategory={selectedCategory} 
+                   searchInput={searchInput} handleAddItemToCart={handleAddItemToCart} 
+                   handleRemoveItemFromCart={handleRemoveItemFromCart} 
+                   shoppingCart={shoppingCart}/>
 
       <div className="about">
         <div className="content">

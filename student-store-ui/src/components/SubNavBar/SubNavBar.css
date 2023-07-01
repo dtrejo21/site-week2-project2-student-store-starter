@@ -18,7 +18,7 @@
   
 }
 
-.sub-navbar .content .row .filter button{
+ button{
   cursor: pointer;
   border: none; 
   background-color: transparent;
@@ -26,7 +26,7 @@
   font-weight: 500;
   padding-bottom: 10px;
 }
-.material-icons{
+.sub-navbar .content .row .material-icons{
   color: white;
   background-color: plum;
   border: plum;
