@@ -3,8 +3,11 @@
     flex-wrap: wrap;
     gap: 20px;
     justify-content: baseline;
+    margin-left: 40px;
 }
 
 .product-grid .product-card{
     background-color: white;
+    display: flex;
+
 }

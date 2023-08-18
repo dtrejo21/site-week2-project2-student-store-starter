@@ -5,7 +5,6 @@
     align-items: center;
 }
 .shopping-cart .material-icons{
-    padding-top: 20px;
     font-size: 40px;
     cursor: pointer;
     background-color: #2C4047;
@@ -29,7 +28,6 @@
     justify-content: space-evenly;
     background-color: white;
     color: black;
-
 }
 .shopping-cart{
     align-items: center;
@@ -40,4 +38,50 @@
     background-color: white;
     border-radius: 4px;
 }
+
+.shopping-cart .table-sections{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-weight: bold;
+    border: 1px solid white;
+    margin: 0 10px;
+}
+.shopping-cart .shopping-product{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: white;
+    color: black;
+    margin: 0 10px;
+
+}
+.shopping-cart .receipt{
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    margin: 0 10px;
+    margin-top: 10px;
+}
+.shopping-cart h3{
+    text-align: center;
+}
+.shopping-cart .receipt .subtotal{
+    display: flex;
+    padding-left: 10px;
+}
+.shopping-cart .receipt .left{
+    margin-left: auto;
+    margin-right: 10px;
+}
+.shopping-cart .receipt .fees{
+    display: flex;
+    padding: 10px;
+}
+.shopping-cart .receipt .total{
+    display: flex;
+    padding-left: 10px;
+}
+
 
